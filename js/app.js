@@ -1,3 +1,48 @@
+// STAR CURSOR
+const starCursor = document.getElementById('star-cursor');
+const sparkColors = ['#E50914', '#ff6b6b', '#ffffff', '#ffcc00', '#ff9999'];
+let lastSpark = 0;
+
+document.addEventListener('mousemove', e => {
+  starCursor.style.left = e.clientX + 'px';
+  starCursor.style.top = e.clientY + 'px';
+
+  const now = Date.now();
+  if (now - lastSpark > 60) {
+    lastSpark = now;
+    createSpark(e.clientX, e.clientY);
+  }
+});
+
+function createSpark(x, y) {
+  const spark = document.createElement('div');
+  spark.className = 'spark';
+  const size = Math.random() * 6 + 3;
+  const color = sparkColors[Math.floor(Math.random() * sparkColors.length)];
+  const offsetX = (Math.random() - 0.5) * 20;
+  const offsetY = (Math.random() - 0.5) * 20;
+  spark.style.cssText = `
+    left: ${x + offsetX}px;
+    top: ${y + offsetY}px;
+    width: ${size}px;
+    height: ${size}px;
+    background: ${color};
+    box-shadow: 0 0 ${size * 2}px ${color};
+  `;
+  document.body.appendChild(spark);
+  setTimeout(() => spark.remove(), 600);
+}
+
+document.addEventListener('click', e => {
+  for (let i = 0; i < 8; i++) createSpark(e.clientX, e.clientY);
+});
+
+// Scale star on hover
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => starCursor.style.transform = 'translate(-50%,-50%) scale(1.6)');
+  el.addEventListener('mouseleave', () => starCursor.style.transform = 'translate(-50%,-50%) scale(1)');
+});
+
 // SPLASH SCREEN
 window.addEventListener('load', () => {
   setTimeout(() => {
