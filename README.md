@@ -8,9 +8,10 @@ A personal portfolio designed as a **library**: an open book on top of a stack o
 
 - **Library home:** a photo of a real stack of books (`img/library.jpg`); each spine is a button with a small paper label
 - **Reader:** each book opens as a page spread with a leather spine on the left and the real books (cropped from the photo) stacked on the right to switch sections
-- **Shareable links:** `#about`, `#hackathons`, `#projects`, `#intro`, `#skills`, `#languages`, `#contact` open that book directly
+- **Shareable links:** `#about`, `#hackathons`, `#projects`, `#intro`, `#experience`, `#skills`, `#languages`, `#contact` open that book directly
 - **Accessible:** real buttons, keyboard and Escape to close, focus returns to the book, reduced-motion support, 44 px touch targets
 - **Responsive:** checked at 1280, 390 and 320 px; on phones the books become tabs at the bottom
+- **CV request:** the Contact book asks which role the CV is for and who is asking, emails a notice through FormSubmit, then downloads `cv/Karen_Tatiana_Martinez_CV.pdf`
 - **Social preview** image (Open Graph) for LinkedIn, X and WhatsApp
 
 ## 🚀 Hackathon Builds (2026)

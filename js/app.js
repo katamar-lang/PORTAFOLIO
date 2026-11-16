@@ -4,7 +4,7 @@
   const scroller = document.getElementById('paperScroll');
   const running = document.getElementById('readerRunning');
   const library = document.getElementById('library');
-  const BOOKS = ['intro', 'about', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
+  const BOOKS = ['intro', 'about', 'experience', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
   let opener = null;
 
   function show(book) {
@@ -19,9 +19,11 @@
     scroller.scrollTop = 0;
     const cur = document.querySelector('.vspine[data-open="' + book + '"]');
     const shelf = cur && cur.parentElement;
-    if (shelf && shelf.scrollWidth > shelf.clientWidth) {
-      shelf.scrollLeft = cur.offsetLeft - (shelf.clientWidth - cur.offsetWidth) / 2;
-    }
+    requestAnimationFrame(() => {
+      if (shelf && shelf.scrollWidth > shelf.clientWidth) {
+        shelf.scrollLeft = cur.offsetLeft - shelf.offsetLeft - (shelf.clientWidth - cur.offsetWidth) / 2;
+      }
+    });
   }
 
   function open(book, from) {
@@ -55,6 +57,51 @@
   window.addEventListener('hashchange', () => {
     const b = location.hash.slice(1);
     if (BOOKS.includes(b)) open(b); else if (!reader.hidden) close();
+  });
+
+  // CV request: ask the role and who is asking, notify Karen by email, then download.
+  // The notice goes through FormSubmit (formsubmit.co); the download never depends on it.
+  const cvForm = document.getElementById('cvForm');
+  const CV_FILE = 'cv/Karen_Tatiana_Martinez_CV.pdf';
+  const CV_NOTIFY = 'https://formsubmit.co/ajax/Katamar2000@gmail.com';
+  function downloadCv() {
+    const a = document.createElement('a');
+    a.href = CV_FILE; a.download = 'Karen_Tatiana_Martinez_CV.pdf';
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  if (cvForm) cvForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const note = document.getElementById('cvNote');
+    const data = new FormData(cvForm);
+    const role = (data.get('role') || '').trim();
+    const who = data.get('who');
+    if (!role || !who) {
+      note.textContent = !role ? 'Please tell me which role this is for.' : 'Please choose who you are.';
+      (!role ? cvForm.role : cvForm.querySelector('input[name="who"]')).focus();
+      return;
+    }
+    const btn = cvForm.querySelector('button[type="submit"]');
+    btn.disabled = true; note.textContent = 'Preparing your download…';
+    if (!data.get('_honey')) {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 6000);
+      try {
+        await fetch(CV_NOTIFY, {
+          method: 'POST', signal: ctrl.signal,
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            _subject: 'CV download: ' + role + ' (' + who + ')',
+            _template: 'table', _captcha: 'false',
+            Role: role, 'Who is asking': who, 'Company or agency': (data.get('company') || '').trim() || '(not given)',
+            When: new Date().toString()
+          })
+        });
+      } catch (err) { /* the download goes ahead even if the notice fails */ }
+      clearTimeout(timer);
+    }
+    downloadCv();
+    note.textContent = 'Thank you! Your download has started.';
+    btn.disabled = false;
   });
 
   // A shared link like .../#projects opens that book directly
