@@ -17,28 +17,18 @@
   <meta name="twitter:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
   <link rel="preload" href="fonts/Junicode-Roman.woff2" as="font" type="font/woff2" crossorigin/>
   <link rel="preload" href="img/library.jpg" as="image"/>
-  <link rel="stylesheet" href="css/style.css?v=library5"/>
+  <link rel="stylesheet" href="css/style.css?v=library7"/>
 </head>
 <body>
 
-  <header class="top">
-    <span class="mono">K · T · M</span>
-    <span class="status"><i aria-hidden="true"></i>Available for remote work</span>
-  </header>
 
   <main class="library" id="library">
 
-    <section class="intro intro-left">
-      <p class="eyebrow">Portfolio · 2026</p>
-      <h1 class="name">Karen Tatiana Martínez</h1>
-      <p class="role">Front-end developer · Technical support · Hackathon builder</p>
-      <p class="summary">I build clean, accessible web products and help people use them. Based in Colombia, working remotely with teams worldwide.</p>
-      <p class="hint">Choose a book to open it</p>
-    </section>
+    <h1 class="sr-only">Karen Tatiana Martínez · Portfolio</h1>
 
     <div class="stack">
       <img class="photo" src="img/library.jpg" width="554" height="985" alt="A stack of old leather-bound books with an open book on top, in front of a library shelf"/>
-      <button type="button" class="spot spot-open" data-open="about" style="left:9%;top:21%;width:82%;height:17.5%" aria-label="Open the book: About me"></button>
+      <button type="button" class="spot spot-open" data-open="intro" style="left:9%;top:21%;width:82%;height:17.5%;--t:-0.4deg" aria-label="Open the first book: Karen Tatiana Martínez"><span class="tag">Start here</span></button>
         <button type="button" class="spot" data-open="about" style="left:17.51%;top:38.78%;width:54.33%;height:5.69%;--t:-0.6deg" aria-label="Open the book: About me"><span class="tag">About me</span></button>
         <button type="button" class="spot" data-open="hackathons" style="left:15.16%;top:44.37%;width:58.84%;height:5.89%;--t:0.4deg" aria-label="Open the book: Hackathons"><span class="tag">Hackathons</span></button>
         <button type="button" class="spot" data-open="projects" style="left:6.68%;top:49.75%;width:65.88%;height:9.75%;--t:-0.3deg" aria-label="Open the book: Projects"><span class="tag">Projects</span></button>
@@ -47,24 +37,8 @@
         <button type="button" class="spot" data-open="contact" style="left:6.32%;top:76.24%;width:80.69%;height:8.32%;--t:0.3deg" aria-label="Open the book: Contact"><span class="tag">Contact</span></button>
     </div>
 
-    <section class="intro intro-right">
-      <p class="eyebrow">Selected work</p>
-      <ul class="toc">
-        <li><button type="button" data-open="hackathons"><span>Isla Skills</span><em>Robots pay for skills · IslandHack v5</em></button></li>
-        <li><button type="button" data-open="hackathons"><span>debris</span><em>Game for kids · NASA Space Apps</em></button></li>
-        <li><button type="button" data-open="projects"><span>KATAMAR Fashion</span><em>E-commerce</em></button></li>
-        <li><button type="button" data-open="projects"><span>Mabelle Luxury Dog Spa</span><em>Landing page</em></button></li>
-      </ul>
-      <p class="eyebrow">Languages</p>
-      <ul class="langs">
-        <li><span>Spanish</span><em>Native</em></li>
-        <li><span>English</span><em>Advanced</em></li>
-        <li><span>Portuguese</span><em>Intermediate</em></li>
-      </ul>
-    </section>
   </main>
 
-  <footer class="foot">© 2026 Karen Tatiana Martínez · Colombia</footer>
 
   <div class="reader" id="reader" hidden>
     <div class="reader-backdrop" data-close></div>
@@ -80,6 +54,33 @@
           <button type="button" class="close" data-close aria-label="Close the book">✕</button>
         </div>
         <div class="paper-scroll" id="paperScroll" tabindex="-1">
+
+          <!-- THE FIRST BOOK · INTRODUCTION -->
+          <section class="chapter" data-book="intro" data-num="Prologue" hidden>
+            <p class="eyebrow-ink">Portfolio · 2026</p>
+            <h2>Karen Tatiana Martínez</h2>
+            <p class="lead">Front-end developer · Technical support · Hackathon builder. I build clean, accessible web products and help people use them. Based in Colombia, working remotely with teams worldwide.</p>
+            <div class="cols">
+              <div>
+                <h3>Selected work</h3>
+                <ul class="plain toc-ink">
+                  <li><button type="button" data-open="hackathons"><span>Isla Skills</span><em>Robots pay for skills · IslandHack v5</em></button></li>
+                  <li><button type="button" data-open="hackathons"><span>debris</span><em>Game for kids · NASA Space Apps</em></button></li>
+                  <li><button type="button" data-open="projects"><span>KATAMAR Fashion</span><em>E-commerce</em></button></li>
+                  <li><button type="button" data-open="projects"><span>Mabelle Luxury Dog Spa</span><em>Landing page</em></button></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Languages</h3>
+                <dl class="facts">
+                  <div><dt>Spanish</dt><dd>Native</dd></div>
+                  <div><dt>English</dt><dd>Advanced</dd></div>
+                  <div><dt>Portuguese</dt><dd>Intermediate</dd></div>
+                </dl>
+              </div>
+            </div>
+            <p class="links"><a href="#about">About me →</a><a href="#contact">Contact →</a></p>
+          </section>
 
           <!-- BOOK I · ABOUT -->
           <section class="chapter" data-book="about" data-num="Book I" hidden>
@@ -248,6 +249,7 @@
       </div>
 
       <div class="shelf" aria-label="Other books">
+        <button type="button" class="vspine" data-open="intro" style="--h:url('../img/spine-7.jpg');--s:url('../img/stand-7.jpg');--tw:47px;--th:92%"><span class="tag">Start here</span></button>
         <button type="button" class="vspine" data-open="about" style="--h:url('../img/spine-1.jpg');--s:url('../img/stand-1.jpg');--tw:34px;--th:72%"><span class="tag">About me</span></button>
         <button type="button" class="vspine" data-open="hackathons" style="--h:url('../img/spine-2.jpg');--s:url('../img/stand-2.jpg');--tw:35px;--th:80%"><span class="tag">Hackathons</span></button>
         <button type="button" class="vspine" data-open="projects" style="--h:url('../img/spine-3.jpg');--s:url('../img/stand-3.jpg');--tw:58px;--th:76%"><span class="tag">Projects</span></button>
@@ -258,6 +260,6 @@
     </div>
   </div>
 
-  <script src="js/app.js?v=library5"></script>
+  <script src="js/app.js?v=library7"></script>
 </body>
 </html>

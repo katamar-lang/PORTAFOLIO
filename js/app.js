@@ -4,7 +4,7 @@
   const scroller = document.getElementById('paperScroll');
   const running = document.getElementById('readerRunning');
   const library = document.getElementById('library');
-  const BOOKS = ['about', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
+  const BOOKS = ['intro', 'about', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
   let opener = null;
 
   function show(book) {
@@ -17,6 +17,11 @@
       b.setAttribute('aria-current', b.dataset.open === book ? 'true' : 'false');
     });
     scroller.scrollTop = 0;
+    const cur = document.querySelector('.vspine[data-open="' + book + '"]');
+    const shelf = cur && cur.parentElement;
+    if (shelf && shelf.scrollWidth > shelf.clientWidth) {
+      shelf.scrollLeft = cur.offsetLeft - (shelf.clientWidth - cur.offsetWidth) / 2;
+    }
   }
 
   function open(book, from) {
