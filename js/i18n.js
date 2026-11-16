@@ -51,11 +51,11 @@
     "Based in": ["Vivo en", "Moro em"],
     "Florianópolis, Brazil · remote worldwide": ["Florianópolis, Brasil · remoto para todo el mundo", "Florianópolis, Brasil · remoto para o mundo todo"],
     "Web3 · Solana · AI products": ["Web3 · Solana · Productos con IA", "Web3 · Solana · Produtos com IA"],
-    "Since 2019 · customer support, sales, community and web": ["Desde 2019 · atención al cliente, ventas, comunidad y web", "Desde 2019 · atendimento ao cliente, vendas, comunidade e web"],
+    "Since 2019 · customer support, sales and web": ["Desde 2019 · atención al cliente, ventas y web", "Desde 2019 · atendimento ao cliente, vendas e web"],
     "Advanced (C1)": ["Avanzado (C1)", "Avançado (C1)"],
-    "Customer support, sales, community and web work since 2019, for teams in Colombia, Malta and remote.": [
-      "Atención al cliente, ventas, comunidad y desarrollo web desde 2019, para equipos en Colombia, Malta y en remoto.",
-      "Atendimento ao cliente, vendas, comunidade e desenvolvimento web desde 2019, para equipes na Colômbia, em Malta e remotas."],
+    "Customer support, sales and web work since 2019, for teams in Colombia, Malta and remote.": [
+      "Atención al cliente, ventas y desarrollo web desde 2019, para equipos en Colombia, Malta y en remoto.",
+      "Atendimento ao cliente, vendas e desenvolvimento web desde 2019, para equipes na Colômbia, em Malta e remotas."],
     "2022 – Present · Remote": ["2022 – Actualidad · Remoto", "2022 – Atual · Remoto"],
     "Freelance Web Developer &amp; Digital Solutions": ["Desarrolladora web freelance y soluciones digitales", "Desenvolvedora web freelancer e soluções digitais"],
     "Independent": ["Independiente", "Autônoma"],
@@ -71,18 +71,6 @@
     "Collaborate with clients to understand requirements and deliver practical digital solutions.": [
       "Trabajo con los clientes para entender lo que necesitan y entregar soluciones digitales prácticas.",
       "Trabalho com os clientes para entender o que precisam e entregar soluções digitais práticas."],
-    "2024 – 2025 · Remote": ["2024 – 2025 · Remoto", "2024 – 2025 · Remoto"],
-    "Community Management &amp; Developer Relations": ["Gestión de comunidad y relación con desarrolladores", "Gestão de comunidade e relações com desenvolvedores"],
-    "Fintech / Web3 projects": ["Proyectos fintech / Web3", "Projetos fintech / Web3"],
-    "Supported online communities and helped maintain engagement across digital channels.": [
-      "Apoyé comunidades en línea y ayudé a mantener su participación en los canales digitales.",
-      "Apoiei comunidades online e ajudei a manter o engajamento nos canais digitais."],
-    "Communicated product updates, initiatives and technical information to community members.": [
-      "Comuniqué novedades del producto, iniciativas e información técnica a los miembros de la comunidad.",
-      "Comuniquei novidades do produto, iniciativas e informações técnicas aos membros da comunidade."],
-    "Assisted with community activities, user feedback and ecosystem participation.": [
-      "Colaboré en actividades de la comunidad, en la recolección de comentarios de usuarios y en la participación en el ecosistema.",
-      "Colaborei em atividades da comunidade, no feedback dos usuários e na participação no ecossistema."],
     "Jan 2025 – Mar 2025": ["Ene 2025 – Mar 2025", "Jan 2025 – Mar 2025"],
     "Customer Support Representative, Samsung campaign": ["Agente de atención al cliente, campaña Samsung", "Atendente de suporte ao cliente, campanha Samsung"],
     "Managed approximately 90 customer cases per day through chat-based CRM systems.": [
@@ -126,9 +114,9 @@
     "Education": ["Educación", "Formação"],
     "Technologist Degree in Industrial Processes<br>Universidad ECCI, Colombia": ["Tecnología en Procesos Industriales<br>Universidad ECCI, Colombia", "Tecnólogo em Processos Industriais<br>Universidad ECCI, Colômbia"],
     "Certifications": ["Certificaciones", "Certificações"],
-    "AWS Entrena Latinas · AI &amp; Cloud Computing, Generative AI &amp; Natural Language Processing (2024)": [
-      "AWS Entrena Latinas · IA y computación en la nube, IA generativa y procesamiento de lenguaje natural (2024)",
-      "AWS Entrena Latinas · IA e computação em nuvem, IA generativa e processamento de linguagem natural (2024)"],
+    "AWS Entrena Latinas · AI &amp; Cloud Computing (2026)": ["AWS Entrena Latinas · IA y computación en la nube (2026)", "AWS Entrena Latinas · IA e computação em nuvem (2026)"],
+    "Generative AI &amp; Natural Language Processing (2024)": ["IA generativa y procesamiento de lenguaje natural (2024)", "IA generativa e processamento de linguagem natural (2024)"],
+    "2023 – Dec 2024 · Malta": ["2023 – Dic 2024 · Malta", "2023 – Dez 2024 · Malta"],
     "Two products built in November 2026, each from idea to live demo in days.": [
       "Dos productos construidos en noviembre de 2026, cada uno de la idea a la demo en vivo en pocos días.",
       "Dois produtos construídos em novembro de 2026, cada um da ideia à demo ao vivo em poucos dias."],
@@ -187,12 +175,14 @@
       "Página de estilo editorial para um spa de pets em Bogotá, com agendamento pelo WhatsApp."],
     "This portfolio": ["Este portafolio", "Este portfólio"],
     "A library of books, built by hand with no frameworks.": ["Una biblioteca de libros, hecha a mano y sin frameworks.", "Uma biblioteca de livros, feita à mão e sem frameworks."],
-    "What I use every day, and what I've been building with lately.": [
-      "Lo que uso todos los días y con lo que he estado construyendo últimamente.",
-      "O que uso todos os dias e com o que tenho construído ultimamente."],
+    "This portfolio is built by hand with HTML, CSS and vanilla JavaScript. My most recent projects add Node.js, the Claude API, Solana and three.js.": [
+      "Este portafolio está hecho a mano con HTML, CSS y JavaScript puro. Mis proyectos más recientes suman Node.js, la API de Claude, Solana y three.js.",
+      "Este portfólio foi feito à mão com HTML, CSS e JavaScript puro. Meus projetos mais recentes somam Node.js, a API do Claude, Solana e three.js."],
+    "Core front-end": ["Base front-end", "Base front-end"],
+    "JavaScript (vanilla)": ["JavaScript (puro)", "JavaScript (puro)"],
     "Responsive design": ["Diseño adaptable", "Design responsivo"],
     "Accessibility (WCAG)": ["Accesibilidad (WCAG)", "Acessibilidade (WCAG)"],
-    "Building with": ["Construyendo con", "Construindo com"],
+    "In recent projects": ["En proyectos recientes", "Em projetos recentes"],
     "Serverless functions (Netlify)": ["Funciones serverless (Netlify)", "Funções serverless (Netlify)"],
     "Claude API (AI vision)": ["API de Claude (visión por IA)", "API do Claude (visão por IA)"],
     "Solana · x402 payments": ["Solana · pagos con x402", "Solana · pagamentos com x402"],
