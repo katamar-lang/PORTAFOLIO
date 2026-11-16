@@ -6,11 +6,12 @@
   const library = document.getElementById('library');
   const BOOKS = ['intro', 'about', 'experience', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
   let opener = null;
+  const T = s => (window.I18N ? window.I18N.t(s) : s);
 
   function show(book) {
     document.querySelectorAll('.chapter').forEach(c => { c.hidden = c.dataset.book !== book; });
     const ch = document.querySelector('.chapter[data-book="' + book + '"]');
-    running.textContent = ch.dataset.num;
+    running.textContent = T(ch.dataset.num);
     ch.querySelector('h2').id = 'readerTitle';
     document.querySelectorAll('.chapter h2').forEach(h => { if (h !== ch.querySelector('h2')) h.removeAttribute('id'); });
     document.querySelectorAll('.vspine').forEach(b => {
@@ -76,12 +77,12 @@
     const role = (data.get('role') || '').trim();
     const who = data.get('who');
     if (!role || !who) {
-      note.textContent = !role ? 'Please tell me which role this is for.' : 'Please choose who you are.';
+      note.textContent = T(!role ? 'Please tell me which role this is for.' : 'Please choose who you are.');
       (!role ? cvForm.role : cvForm.querySelector('input[name="who"]')).focus();
       return;
     }
     const btn = cvForm.querySelector('button[type="submit"]');
-    btn.disabled = true; note.textContent = 'Preparing your download…';
+    btn.disabled = true; note.textContent = T('Preparing your download…');
     if (!data.get('_honey')) {
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 6000);
@@ -92,7 +93,7 @@
           body: JSON.stringify({
             _subject: 'CV download: ' + role + ' (' + who + ')',
             _template: 'table', _captcha: 'false',
-            Role: role, 'Who is asking': who, 'Company or agency': (data.get('company') || '').trim() || '(not given)',
+            Role: role, 'Who is asking': who, 'Page language': document.documentElement.lang, 'Company or agency': (data.get('company') || '').trim() || '(not given)',
             When: new Date().toString()
           })
         });
@@ -100,7 +101,7 @@
       clearTimeout(timer);
     }
     downloadCv();
-    note.textContent = 'Thank you! Your download has started.';
+    note.textContent = T('Thank you! Your download has started.');
     btn.disabled = false;
   });
 

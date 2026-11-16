@@ -12,6 +12,7 @@ A personal portfolio designed as a **library**: an open book on top of a stack o
 - **Accessible:** real buttons, keyboard and Escape to close, focus returns to the book, reduced-motion support, 44 px touch targets
 - **Responsive:** checked at 1280, 390 and 320 px; on phones the books become tabs at the bottom
 - **CV request:** the Contact book asks which role the CV is for and who is asking, emails a notice through FormSubmit, then downloads `cv/Karen_Tatiana_Martinez_CV.pdf`
+- **Three languages:** English, Spanish and Portuguese (`js/i18n.js`); the choice is remembered, and the first visit follows the browser's language
 - **Social preview** image (Open Graph) for LinkedIn, X and WhatsApp
 
 ## 🚀 Hackathon Builds (2026)

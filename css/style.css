@@ -532,3 +532,24 @@ body::after {
   .portrait { width: 72px; height: 90px; margin-left: 16px; }
   .btn-cv { justify-self: stretch; }
 }
+
+/* ---------- language switch ---------- */
+.lang { display: inline-flex; align-items: center; gap: 2px; }
+.lang button {
+  min-width: 42px; min-height: 44px; padding: 0 6px;
+  font-size: 13px; letter-spacing: .14em; color: var(--ink-3);
+  border-radius: 999px; transition: color .2s, background .2s;
+}
+.lang button[aria-pressed="true"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
+.lang button:hover { color: var(--ink); background: rgba(255,255,255,.5); }
+.lang-home { position: absolute; top: 12px; right: clamp(10px, 3vw, 36px); z-index: 5; }
+.lang-home button { color: rgba(239,231,214,.55); }
+.lang-home button[aria-pressed="true"], .lang-home button:hover { color: var(--cream); }
+.lang-home button:hover { background: rgba(255,255,255,.08); }
+body.reading .lang-home { display: none; }
+.paper-head .lang { margin-left: auto; margin-right: 6px; }
+.vspine .tag, .spot .tag { max-width: 100%; }
+@media (max-width: 560px) {
+  .masthead { top: 8%; gap: .5em; }
+  .masthead-role { white-space: normal; padding: 0 14px; line-height: 1.6; }
+}
