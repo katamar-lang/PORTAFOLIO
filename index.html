@@ -2,399 +2,275 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tatiana Martínez — Portfolio</title>
-  <meta name="description" content="Karen Tatiana Martínez: bilingual (EN/ES) front-end developer and technical support specialist. Hackathon builds with AI, Solana payments and games for kids."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Karen Tatiana Martínez · Portfolio</title>
+  <meta name="description" content="Karen Tatiana Martínez: front-end developer and technical support specialist from Colombia. Spanish (native), English (advanced), Portuguese (intermediate). Hackathon builds with AI, Solana payments and games for kids."/>
+  <meta name="theme-color" content="#1c232b"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Karen Tatiana Martínez — Front-End Developer & Hackathon Builder"/>
+  <meta property="og:title" content="Karen Tatiana Martínez · Front-End Developer & Hackathon Builder"/>
   <meta property="og:description" content="Isla Skills, an app store where robots pay for skills per use (IslandHack v5), and debris, a NASA Space Apps game that turns litter pick-ups into space stories."/>
   <meta property="og:url" content="https://katamar-lang.github.io/PORTAFOLIO/"/>
   <meta property="og:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Karen Tatiana Martínez — Front-End Developer & Hackathon Builder"/>
+  <meta name="twitter:title" content="Karen Tatiana Martínez · Front-End Developer & Hackathon Builder"/>
   <meta name="twitter:description" content="Isla Skills (IslandHack v5) and debris (NASA Space Apps): AI, Solana payments and games for kids."/>
   <meta name="twitter:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Netflix+Sans:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261116b"/>
+  <link rel="preload" href="fonts/Junicode-Roman.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css?v=library2"/>
 </head>
 <body>
 
-  <!-- STAR CURSOR -->
-  <div id="star-cursor">
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2 L13.5 9 L20 8 L15 13 L17 20 L12 16 L7 20 L9 13 L4 8 L10.5 9 Z"
-        fill="#E50914" stroke="#ff9999" stroke-width="0.5"/>
-      <circle cx="12" cy="12" r="2" fill="white" opacity="0.8"/>
-    </svg>
+  <header class="top">
+    <span class="mono">K · T · M</span>
+    <span class="status"><i aria-hidden="true"></i>Available for remote work</span>
+  </header>
+
+  <!-- THE LIBRARY: an open book on top of a stack of books -->
+  <main class="library" id="library">
+    <h1 class="sr-only">Karen Tatiana Martínez, portfolio</h1>
+
+    <div class="stack">
+
+      <article class="open-book" aria-label="Introduction">
+        <div class="cover-under" aria-hidden="true"></div>
+        <div class="pages">
+          <section class="page page-left">
+            <p class="eyebrow">Portfolio · 2026</p>
+            <h2 class="name">Karen Tatiana Martínez</h2>
+            <p class="role">Front-end developer · Technical support · Hackathon builder</p>
+            <p class="summary">I build clean, accessible web products and help people use them. Based in Colombia, working remotely with teams worldwide.</p>
+          </section>
+          <section class="page page-right">
+            <p class="eyebrow">Selected work</p>
+            <ul class="toc">
+              <li><button type="button" data-open="hackathons"><span>Isla Skills</span><em>robots pay for skills</em></button></li>
+              <li><button type="button" data-open="hackathons"><span>debris</span><em>NASA Space Apps game</em></button></li>
+              <li><button type="button" data-open="projects"><span>KATAMAR Fashion</span><em>e-commerce</em></button></li>
+              <li><button type="button" data-open="projects"><span>Mabelle Dog Spa</span><em>landing page</em></button></li>
+            </ul>
+            <p class="eyebrow">Languages</p>
+            <ul class="langs">
+              <li><span>Spanish</span><em>Native</em></li>
+              <li><span>English</span><em>Advanced</em></li>
+              <li><span>Portuguese</span><em>Intermediate</em></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <button type="button" class="spine sp-1" data-open="about" aria-label="Open the book: About me">
+        <span class="label">About me</span>
+      </button>
+      <button type="button" class="spine sp-2" data-open="hackathons" aria-label="Open the book: Hackathons">
+        <span class="label">Hackathons</span>
+      </button>
+      <button type="button" class="spine sp-3" data-open="projects" aria-label="Open the book: Projects">
+        <span class="label">Projects</span>
+      </button>
+      <button type="button" class="spine sp-4" data-open="skills" aria-label="Open the book: Skills and tools">
+        <span class="label">Skills &amp; tools</span>
+      </button>
+      <button type="button" class="spine sp-5" data-open="contact" aria-label="Open the book: Contact">
+        <span class="label">Contact</span>
+      </button>
+    </div>
+
+    <p class="hint">Choose a book to open it</p>
+  </main>
+
+  <footer class="foot">© 2026 Karen Tatiana Martínez · Colombia</footer>
+
+  <!-- THE READER: the open book that shows each section -->
+  <div class="reader" id="reader" hidden>
+    <div class="reader-backdrop" data-close></div>
+    <div class="reader-book" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+
+      <nav class="rail" aria-label="Books">
+        <span class="rail-mono">KTM</span>
+        <div class="rail-dots">
+          <button type="button" data-open="about" aria-label="About me"></button>
+          <button type="button" data-open="hackathons" aria-label="Hackathons"></button>
+          <button type="button" data-open="projects" aria-label="Projects"></button>
+          <button type="button" data-open="skills" aria-label="Skills and tools"></button>
+          <button type="button" data-open="contact" aria-label="Contact"></button>
+        </div>
+      </nav>
+
+      <div class="paper">
+        <div class="paper-head">
+          <span class="running" id="readerRunning">Book I</span>
+          <button type="button" class="close" data-close aria-label="Close the book">✕</button>
+        </div>
+        <div class="paper-scroll" id="paperScroll" tabindex="-1">
+
+          <!-- BOOK I · ABOUT -->
+          <section class="chapter" data-book="about" data-num="Book I" hidden>
+            <h2>About me</h2>
+            <p class="lead">I'm Karen, a bilingual professional from Colombia. I connect people and technology: I solve problems for users, and I build the web pages and tools they use.</p>
+            <div class="cols">
+              <div>
+                <h3>What I do</h3>
+                <p>Technical support and customer success for international clients: troubleshooting, guiding users through digital processes and turning their feedback into clear fixes.</p>
+                <p>Front-end development: responsive, accessible pages in HTML, CSS and JavaScript, and lately full products with AI and online payments.</p>
+              </div>
+              <div>
+                <h3>What I'm looking for</h3>
+                <p>A remote-first team where I can combine communication and front-end skills to give people great support and great user experiences.</p>
+              </div>
+            </div>
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Colombia · remote worldwide</dd></div>
+              <div><dt>Experience</dt><dd>2 years · 500+ clients supported</dd></div>
+              <div><dt>Spanish</dt><dd>Native</dd></div>
+              <div><dt>English</dt><dd>Advanced (C1)</dd></div>
+              <div><dt>Portuguese</dt><dd>Intermediate</dd></div>
+            </dl>
+          </section>
+
+          <!-- BOOK II · HACKATHONS -->
+          <section class="chapter" data-book="hackathons" data-num="Book II" hidden>
+            <h2>Hackathons</h2>
+            <p class="lead">Two products built in November 2026, each from idea to live demo in days.</p>
+
+            <article class="entry">
+              <figure class="arch"><img src="img/isla-arch.jpg" alt="Isla Skills: the skill store for robots, with three skills and their prices in USDC" loading="lazy"/></figure>
+              <div class="entry-body">
+                <p class="meta">IslandHack v5 · IslandDAO · Florianópolis, Brazil · Solo build</p>
+                <h3>Isla Skills</h3>
+                <p>An app store for robot skills. Each skill is a service a robot calls and pays <b>per use</b>, in USDC on Solana, with no human approving anything.</p>
+                <h4>Why</h4>
+                <p>Robots are learning new skills through software, but there was no way to pay for a skill each time a robot uses it. Skills can come from AI models and from people, and 100% of each price goes to the skill's maker.</p>
+                <h4>What I built</h4>
+                <ul>
+                  <li>Clean Sweep: Coco, a simulated cleaning robot, takes a photo of a room and pays a chain of three skills.</li>
+                  <li>Litter Spotter (AI vision with Claude); when the AI is unsure, a real person reviews the photo and gets paid.</li>
+                  <li>Cleanup Planner, and a 3D model of the villa where Coco drives to the room.</li>
+                  <li>A robot wallet with a daily budget, working with Solflare, Phantom and Backpack. Real payments settled on Solana devnet.</li>
+                </ul>
+                <p class="tools">JavaScript · Node.js · Serverless functions · Claude API · Solana · x402 · three.js · Playwright</p>
+                <p class="links"><a href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">Live demo →</a><a href="https://github.com/katamar-lang/isla-skills" target="_blank" rel="noopener">Code →</a></p>
+              </div>
+            </article>
+
+            <article class="entry">
+              <figure class="arch arch-blue"><img src="img/debris.jpg" alt="debris app screens: choose your storyteller, the welcome screen with Eagle the lander, and the first chapter, 96 bags on the Moon" loading="lazy"/></figure>
+              <div class="entry-body">
+                <p class="meta">NASA Space Apps Challenge · Team project</p>
+                <h3>debris</h3>
+                <p><i>Every piece left behind has a story.</i> A web game for kids aged 7 to 12: they pick up litter, scan it with a phone, and each piece unlocks the story of a machine humanity left on the Moon, on Mars or in space.</p>
+                <h4>Why</h4>
+                <p>To connect the litter on our streets and beaches with the machines we left in space, so kids learn to clean up safely and discover real NASA history.</p>
+                <h4>What I built</h4>
+                <ul>
+                  <li>The playable web app from the team's designs and storyboard: scan, story, bin it, and earn a patch for a 3D explorer jacket.</li>
+                  <li>An AI scanner that says which bin each piece goes in and warns kids not to touch dangerous items.</li>
+                  <li>Two storytellers (one from Florianópolis' <i>boi de mamão</i> tradition), read-aloud, and an Impact screen.</li>
+                  <li>English, Spanish and Portuguese. No accounts; photos are never stored. Lighthouse accessibility 100.</li>
+                </ul>
+                <p class="tools">JavaScript · HTML · CSS · Node.js · Claude API · Web Speech · Web Audio · 3D</p>
+                <p class="links"><a href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">Code →</a></p>
+              </div>
+            </article>
+          </section>
+
+          <!-- BOOK III · PROJECTS -->
+          <section class="chapter" data-book="projects" data-num="Book III" hidden>
+            <h2>Projects</h2>
+            <p class="lead">Everything I've built, with the tools I used and a direct link.</p>
+            <div class="cards">
+              <a class="card" href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">
+                <figure class="arch"><img src="img/isla-arch.jpg" alt="" loading="lazy"/></figure>
+                <h3>Isla Skills</h3>
+                <p>App store where robots pay for skills per use.</p>
+                <p class="tools">JS · Node.js · Claude · Solana</p>
+                <span class="go">Live demo →</span>
+              </a>
+              <a class="card" href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">
+                <figure class="arch arch-blue"><img src="img/debris.jpg" alt="" loading="lazy"/></figure>
+                <h3>debris</h3>
+                <p>NASA Space Apps game for kids about litter and space.</p>
+                <p class="tools">JS · Node.js · Claude · 3D</p>
+                <span class="go">Code →</span>
+              </a>
+              <a class="card" href="https://katamar-lang.github.io/KATAMAR-FASHION/" target="_blank" rel="noopener">
+                <figure class="arch arch-text arch-tan"><span>KATAMAR</span></figure>
+                <h3>KATAMAR Fashion</h3>
+                <p>Fashion e-commerce with filters, cart, lookbook and newsletter.</p>
+                <p class="tools">HTML · CSS · JavaScript</p>
+                <span class="go">Visit site →</span>
+              </a>
+              <a class="card" href="https://www.mabelluxuryspa.reviews/" target="_blank" rel="noopener">
+                <figure class="arch arch-text arch-ink"><span>Mabelle</span></figure>
+                <h3>Mabelle Luxury Dog Spa</h3>
+                <p>Editorial landing page for a pet spa in Bogotá, with WhatsApp booking.</p>
+                <p class="tools">HTML · CSS · JavaScript</p>
+                <span class="go">Visit site →</span>
+              </a>
+              <a class="card" href="https://github.com/katamar-lang/PORTAFOLIO" target="_blank" rel="noopener">
+                <figure class="arch arch-text arch-green"><span>Library</span></figure>
+                <h3>This portfolio</h3>
+                <p>A library of books, built by hand with no frameworks.</p>
+                <p class="tools">HTML · CSS · JavaScript</p>
+                <span class="go">Code →</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- BOOK IV · SKILLS -->
+          <section class="chapter" data-book="skills" data-num="Book IV" hidden>
+            <h2>Skills &amp; tools</h2>
+            <p class="lead">What I use every day, and what I've been building with lately.</p>
+            <div class="cols cols-3">
+              <div>
+                <h3>Front-end</h3>
+                <ul class="plain">
+                  <li>HTML5 &amp; CSS3</li><li>JavaScript</li><li>Responsive design</li><li>Accessibility (WCAG)</li><li>Git &amp; GitHub</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Building with</h3>
+                <ul class="plain">
+                  <li>Node.js</li><li>Serverless functions (Netlify)</li><li>Claude API (AI vision)</li><li>Solana · x402 payments</li><li>three.js</li><li>Playwright testing</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Support</h3>
+                <ul class="plain">
+                  <li>Live chat &amp; email</li><li>CRM platforms</li><li>Troubleshooting</li><li>Conflict resolution</li><li>Bilingual communication</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- BOOK V · CONTACT -->
+          <section class="chapter" data-book="contact" data-num="Book V" hidden>
+            <h2>Contact</h2>
+            <p class="lead">I'm looking for full-time remote roles in technical support, customer success or front-end development. Let's talk.</p>
+            <dl class="facts">
+              <div><dt>Email</dt><dd><a href="mailto:Katamar2000@gmail.com">Katamar2000@gmail.com</a></dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/katamar-lang" target="_blank" rel="noopener">github.com/katamar-lang</a></dd></div>
+              <div><dt>Location</dt><dd>Colombia · remote worldwide</dd></div>
+              <div><dt>Languages</dt><dd>Spanish · English · Portuguese</dd></div>
+            </dl>
+            <p class="links"><a class="btn" href="mailto:Katamar2000@gmail.com">Write me an email →</a></p>
+          </section>
+
+        </div>
+      </div>
+
+      <div class="shelf" aria-label="Other books">
+        <button type="button" class="vspine sp-1" data-open="about"><span>About me</span></button>
+        <button type="button" class="vspine sp-2" data-open="hackathons"><span>Hackathons</span></button>
+        <button type="button" class="vspine sp-3" data-open="projects"><span>Projects</span></button>
+        <button type="button" class="vspine sp-4" data-open="skills"><span>Skills</span></button>
+        <button type="button" class="vspine sp-5" data-open="contact"><span>Contact</span></button>
+      </div>
+    </div>
   </div>
 
-  <!-- INTRO SPLASH -->
-  <div class="splash" id="splash">
-    <div class="splash-logo">TM</div>
-    <div class="splash-bar"><div class="splash-fill"></div></div>
-  </div>
-
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">TATIANA<span>.</span></div>
-    <div class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#builds">Hackathons</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a href="mailto:Katamar2000@gmail.com" class="nav-cta">Hire Me</a>
-  </nav>
-
-  <!-- HERO — Netflix Featured Banner -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-noise"></div>
-      <div class="hero-gradient"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">🇨🇴 Available for Remote Work</div>
-      <h1 class="hero-title">
-        <span class="title-line">Karen Tatiana</span>
-        <span class="title-line accent">Martínez</span>
-      </h1>
-      <p class="hero-meta">
-        <span class="tag">Technical Support</span>
-        <span class="dot">·</span>
-        <span class="tag">Bilingual EN/ES</span>
-        <span class="dot">·</span>
-        <span class="tag">Front-End Dev</span>
-        <span class="dot">·</span>
-        <span class="tag">Hackathon Builder</span>
-      </p>
-      <p class="hero-desc">
-        Bilingual remote professional combining top-tier client communication 
-        with hands-on front-end development. In 2026 I shipped two hackathon products:
-        an app store where robots pay for skills, and a NASA Space Apps game for kids.
-      </p>
-      <div class="hero-btns">
-        <a href="#builds" class="btn-play">▶ View My Work</a>
-        <a href="#about" class="btn-info">ℹ More Info</a>
-      </div>
-    </div>
-    <div class="hero-scroll">scroll ↓</div>
-  </section>
-
-  <!-- ABOUT ROW -->
-  <section class="row-section" id="about">
-    <h2 class="row-title">About Me</h2>
-    <div class="about-grid">
-      <div class="about-card featured-card">
-        <div class="about-card-inner">
-          <span class="about-number">01</span>
-          <h3>Who I Am</h3>
-          <p>Bilingual professional from Colombia with a passion for solving problems and creating seamless digital experiences. Fluent in English (C1) with proven experience in international client support.</p>
-        </div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-inner">
-          <span class="about-number">02</span>
-          <h3>What I Do</h3>
-          <p>I bridge the gap between technical teams and end users — troubleshooting front-end issues, guiding customers through digital processes, and building clean web interfaces.</p>
-        </div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-inner">
-          <span class="about-number">03</span>
-          <h3>My Goal</h3>
-          <p>To join a remote-first tech company where I can combine my communication skills and growing front-end knowledge to deliver exceptional support and user experiences.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS ROW -->
-  <section class="row-section" id="skills">
-    <h2 class="row-title">My Skills</h2>
-    <div class="skills-categories">
-
-      <div class="skill-category">
-        <h3 class="cat-title">⟨/⟩ Technical</h3>
-        <div class="skill-bar-group">
-          <div class="skill-item">
-            <div class="skill-label"><span>HTML5</span><span>85%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>CSS3</span><span>80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>JavaScript</span><span>65%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Responsive Design</span><span>80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <h3 class="cat-title">◎ Support</h3>
-        <div class="skill-bar-group">
-          <div class="skill-item">
-            <div class="skill-label"><span>Live Chat & Email</span><span>95%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>CRM Platforms</span><span>80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Troubleshooting</span><span>90%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Conflict Resolution</span><span>95%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <h3 class="cat-title">✦ Languages</h3>
-        <div class="lang-cards">
-          <div class="lang-card">
-            <div class="lang-flag">🇨🇴</div>
-            <div class="lang-name">Spanish</div>
-            <div class="lang-level native">Native</div>
-          </div>
-          <div class="lang-card">
-            <div class="lang-flag">🇺🇸</div>
-            <div class="lang-name">English</div>
-            <div class="lang-level c1">C1 Fluent</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- HACKATHON BUILDS -->
-  <section class="row-section" id="builds">
-    <h2 class="row-title">Hackathon Builds · 2026</h2>
-    <p class="row-sub">Real products, built fast, shipped live. What I made and why.</p>
-
-    <article class="build build-isla">
-      <a class="build-media" href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">
-        <img src="img/isla-skills.jpg" alt="Isla Skills cover: The skill store for robots. Litter Spotter 0.01 USDC, Human Reviewer 0.005 USDC, Cleanup Planner 0.002 USDC" loading="lazy"/>
-        <span class="build-badge">IslandHack v5 · IslandDAO</span>
-      </a>
-      <div class="build-body">
-        <div class="build-meta"><span class="preview-live">● LIVE DEMO</span><span>Solo build · Florianópolis, Brazil · Nov 2026</span></div>
-        <h3>Isla Skills</h3>
-        <p class="build-pitch">An app store for robot skills. Each skill is a service a robot calls and pays <strong>per use</strong>, in USDC on Solana, with no human approving anything.</p>
-
-        <div class="build-cols">
-          <div>
-            <h4>Why I built it</h4>
-            <p>Robots are learning new skills through software, but there's no way to pay for a skill each time a robot uses it. I wanted to show that machines can buy services from AI models <em>and</em> from people, automatically and fairly: 100% of each price goes to the skill's maker.</p>
-          </div>
-          <div>
-            <h4>What I built</h4>
-            <ul>
-              <li><strong>Clean Sweep demo:</strong> Coco, a simulated cleaning robot, takes one photo of a room and pays a chain of three skills.</li>
-              <li><strong>Litter Spotter</strong> (AI vision with Claude) finds the litter; when the AI is unsure, a <strong>real person</strong> reviews the photo from their phone and gets paid.</li>
-              <li><strong>Cleanup Planner</strong> turns the findings into a plan, and a <strong>3D model of the villa</strong> shows Coco driving to the room.</li>
-              <li>Robot wallet with a daily budget and spending rules, works with Solflare, Phantom and Backpack.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="build-proof">
-          <span>✓ Real payments settled end to end on Solana devnet</span>
-          <span>✓ Mobile-first, tested on iPhone and Android sizes</span>
-        </div>
-        <div class="preview-tags">
-          <span>JavaScript</span><span>Node.js</span><span>Serverless</span><span>Claude API (vision)</span><span>Solana</span><span>x402</span><span>three.js</span><span>Playwright</span>
-        </div>
-        <div class="build-btns">
-          <a class="btn-play" href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">▶ Try the live demo</a>
-          <a class="btn-info" href="https://github.com/katamar-lang/isla-skills" target="_blank" rel="noopener">⟨/⟩ View code</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="build build-debris">
-      <a class="build-media" href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">
-        <img src="img/debris.jpg" alt="debris app screens: choose your storyteller, the debris welcome screen with Eagle the lander, and the first story chapter, 96 bags on the Moon" loading="lazy"/>
-        <span class="build-badge">NASA Space Apps Challenge</span>
-      </a>
-      <div class="build-body">
-        <div class="build-meta"><span class="preview-new">★ NEW</span><span>Team project · Nov 2026</span></div>
-        <h3>debris</h3>
-        <p class="build-pitch"><em>Every piece left behind has a story.</em> A web game for kids aged 7 to 12: they pick up litter on Earth, scan it with a phone, and each piece unlocks the story of a machine humanity left on the Moon, on Mars or in space.</p>
-
-        <div class="build-cols">
-          <div>
-            <h4>Why we built it</h4>
-            <p>To connect two kinds of litter: the trash on our streets and beaches, and the 13 machines we left in space. Kids learn to clean up safely and discover real NASA history, so every pick-up feels like a mission.</p>
-          </div>
-          <div>
-            <h4>What I built</h4>
-            <ul>
-              <li>The playable web app from the team's designs and storyboard: scan → story → bin it → <strong>earn a patch</strong> for a 3D explorer jacket.</li>
-              <li><strong>AI scanner</strong> (adapted from Isla Skills' Litter Spotter) says which bin each piece goes in, and warns "Stop! Don't touch it" for dangerous items.</li>
-              <li>Two storytellers, including the Bull from Florianópolis' <em>boi de mamão</em> tradition, a read-aloud button, and an <strong>Impact</strong> screen: "Litter to the Moon".</li>
-              <li>Built for kids' privacy: no accounts, photos are never stored.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="build-proof">
-          <span>✓ English · Español · Português</span>
-          <span>✓ Lighthouse: Accessibility 100 · Performance 98</span>
-        </div>
-        <div class="preview-tags">
-          <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Node.js</span><span>Claude API (vision)</span><span>Web Speech</span><span>Web Audio</span><span>3D</span>
-        </div>
-        <div class="build-btns">
-          <a class="btn-info" href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">⟨/⟩ View code</a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <!-- PROJECTS ROW — Netflix Cards -->
-  <section class="row-section" id="projects">
-    <h2 class="row-title">More Projects</h2>
-    <p class="row-sub">Hover to preview · Click to visit</p>
-    <div class="projects-row" id="projectsRow">
-
-      <div class="project-card" onclick="window.open('https://katamar-lang.github.io/KATAMAR-FASHION/','_blank')">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #1a0a00, #5c3317, #c9a87a)">
-          <div class="project-thumb-text">KATAMAR</div>
-          <div class="project-thumb-sub">Fashion</div>
-        </div>
-        <div class="project-preview">
-          <div class="preview-top">
-            <span class="preview-live">● LIVE</span>
-            <span class="preview-type">E-Commerce</span>
-          </div>
-          <h4>KATAMAR Fashion</h4>
-          <p>Luxury fashion e-commerce with product filtering, shopping cart, lookbook and newsletter. Built with HTML, CSS & JavaScript.</p>
-          <div class="preview-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <a href="https://katamar-lang.github.io/KATAMAR-FASHION/" target="_blank" class="preview-btn">Visit Site →</a>
-        </div>
-      </div>
-
-      <div class="project-card" onclick="window.open('#','_blank')">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #0a0a1a, #1a2a4a, #2a5aa0)">
-          <div class="project-thumb-text">PORTFOLIO</div>
-          <div class="project-thumb-sub">This Site</div>
-        </div>
-        <div class="project-preview">
-          <div class="preview-top">
-            <span class="preview-live">● LIVE</span>
-            <span class="preview-type">Portfolio</span>
-          </div>
-          <h4>Personal Portfolio</h4>
-          <p>Netflix-inspired personal portfolio with interactive skill bars, scroll animations, and project showcase. 100% vanilla code.</p>
-          <div class="preview-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <a href="#" class="preview-btn">You're Here →</a>
-        </div>
-      </div>
-
-      <div class="project-card" onclick="window.open('https://www.mabelluxuryspa.reviews/','_blank')">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2a2a2a)">
-          <div class="project-thumb-text" style="font-size:1.1rem; letter-spacing:0.15em;">MABELLE</div>
-          <div class="project-thumb-sub">Luxury Dog Spa</div>
-        </div>
-        <div class="project-preview">
-          <div class="preview-top">
-            <span class="preview-live">● LIVE</span>
-            <span class="preview-type">Landing Page</span>
-          </div>
-          <h4>Mabelle Luxury Dog Spa</h4>
-          <p>Dark editorial landing page for a premium pet spa in Bogotá. Single-file build with WhatsApp CTAs, service showcase and luxury aesthetic.</p>
-          <div class="preview-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <a href="https://www.mabelluxuryspa.reviews/" target="_blank" class="preview-btn" onclick="event.stopPropagation()">Visit Site →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- STATS STRIP -->
-  <section class="stats-strip">
-    <div class="stat">
-      <span class="stat-num" data-target="2">0</span>
-      <span class="stat-label">Years Experience</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" data-target="500">0</span>
-      <span class="stat-label">Clients Supported</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" data-target="5">0</span>
-      <span class="stat-label">Projects Built</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" data-target="2">0</span>
-      <span class="stat-label">Hackathons in 2026</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num" data-target="2">0</span>
-      <span class="stat-label">Languages</span>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="row-section" id="contact">
-    <h2 class="row-title">Let's Work Together</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p class="contact-desc">I'm actively looking for full-time remote opportunities in technical support, customer success, or front-end development. Let's talk!</p>
-        <div class="contact-items">
-          <div class="contact-item">
-            <span class="ci-icon">✉</span>
-            <span>Katamar2000@gmail.com</span>
-          </div>
-          <div class="contact-item">
-            <span class="ci-icon">📍</span>
-            <span>Colombia · Remote Worldwide</span>
-          </div>
-          <div class="contact-item">
-            <span class="ci-icon">🌐</span>
-            <span>English (C1) · Spanish (Native)</span>
-          </div>
-        </div>
-        <div class="contact-links">
-          <a href="https://github.com/katamar-lang" target="_blank" rel="noopener" class="cl-btn">GitHub ↗</a>
-          <a href="mailto:Katamar2000@gmail.com" class="cl-btn">Email ↗</a>
-        </div>
-      </div>
-      <div class="contact-form">
-        <input type="text" placeholder="Your Name" class="cf-input" id="cfName"/>
-        <input type="email" placeholder="Your Email" class="cf-input" id="cfEmail"/>
-        <textarea placeholder="Your Message" class="cf-input cf-textarea" id="cfMsg"></textarea>
-        <button class="cf-btn" onclick="sendMessage()">Send Message ▶</button>
-        <p class="cf-confirm" id="cfConfirm"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-logo">TATIANA<span>.</span></div>
-    <p>© 2026 Karen Tatiana Martínez · Made with HTML, CSS & JavaScript · Colombia 🇨🇴</p>
-  </footer>
-
-  <script src="js/app.js?v=20261116b"></script>
+  <script src="js/app.js?v=library2"></script>
 </body>
 </html>
