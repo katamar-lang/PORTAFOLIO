@@ -23,7 +23,7 @@ A personal portfolio designed as a **library**: an open book on top of a stack o
 - HTML5 (semantic markup)
 - CSS3 (custom properties, grid, flexbox, animations)
 - Vanilla JavaScript (DOM manipulation, Intersection Observer pattern, scroll events)
-- [Junicode](https://open-foundry.com/fonts/junicode) for titles (by Peter S. Baker, SIL Open Font License, see `fonts/OFL.txt`) + DM Sans (Google Fonts)
+- Libre Baskerville for all text (by Impallari Type, SIL Open Font License, see `fonts/OFL-LibreBaskerville.txt`), served from `fonts/`
 
 ## 📁 Structure
 

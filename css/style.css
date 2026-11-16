@@ -1,12 +1,7 @@
-/* Junicode by Peter S. Baker, SIL Open Font License (fonts/OFL.txt) */
-@font-face {
-  font-family: 'Junicode'; src: url('../fonts/Junicode-Roman.woff2') format('woff2');
-  font-weight: 300 700; font-stretch: 75% 125%; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'Junicode'; src: url('../fonts/Junicode-Italic.woff2') format('woff2');
-  font-weight: 300 700; font-stretch: 75% 125%; font-style: italic; font-display: swap;
-}
+/* Libre Baskerville by Impallari Type, SIL Open Font License (fonts/OFL-LibreBaskerville.txt) */
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/LibreBaskerville-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/LibreBaskerville-400-italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/LibreBaskerville-700-normal.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
 
 :root {
   --bg: #1d2227;
@@ -19,7 +14,7 @@
   --ink-3: #8a8072;
   --gold: #c4a062;
   --gold-ink: #94743a;
-  --serif: 'Junicode', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --serif: 'Libre Baskerville', Baskerville, Georgia, 'Times New Roman', serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
