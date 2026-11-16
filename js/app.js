@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 
 // SCROLL REVEAL
 function checkReveal() {
-  document.querySelectorAll('.about-card, .skill-category, .project-card, .stat, .contact-grid').forEach(el => {
+  document.querySelectorAll('.about-card, .skill-category, .build, .project-card, .stat, .contact-grid').forEach(el => {
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight - 80) {
       el.classList.add('reveal', 'visible');
@@ -132,7 +132,7 @@ function sendMessage() {
 }
 
 // ADD REVEAL CLASS TO ELEMENTS
-document.querySelectorAll('.about-card, .skill-category, .project-card').forEach(el => {
+document.querySelectorAll('.about-card, .skill-category, .build, .project-card').forEach(el => {
   el.classList.add('reveal');
 });
 

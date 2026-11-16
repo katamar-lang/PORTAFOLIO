@@ -17,6 +17,11 @@ A Netflix-inspired personal portfolio website built with vanilla HTML, CSS, and 
 - **Fully responsive** — mobile, tablet, desktop
 - **Smooth scroll reveal** animations throughout
 
+## 🚀 Hackathon Builds (2026)
+
+- **[Isla Skills](https://isla-skills-dao-2b40fb.netlify.app/?v=2)** · IslandHack v5 (IslandDAO): an app store where robots pay for skills per use, in USDC on Solana with x402. AI vision (Claude), a human reviewer who gets paid, and a 3D villa simulation. [Code](https://github.com/katamar-lang/isla-skills)
+- **[debris](https://github.com/gringokiwi/spaceapps)** · NASA Space Apps Challenge: a web game for kids that turns litter pick-ups into stories about the machines we left on the Moon and Mars. AI scanner, 3 languages, read-aloud, Accessibility 100.
+
 ## 🛠 Technologies
 
 - HTML5 (semantic markup)
@@ -31,6 +36,7 @@ portfolio/
 ├── index.html
 ├── css/
 │   └── style.css
+├── img/            # project images + social preview (og.jpg)
 ├── js/
 │   └── app.js
 └── README.md

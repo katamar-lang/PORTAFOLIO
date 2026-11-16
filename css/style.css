@@ -295,6 +295,60 @@ body {
 .native { background: rgba(229,9,20,0.15); color: var(--red); }
 .c1 { background: rgba(255,255,255,0.1); color: var(--light); }
 
+/* HACKATHON BUILDS */
+.build {
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: 0;
+  margin-top: 2.5rem; background: var(--dark3);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.build:hover { border-color: rgba(229,9,20,0.5); box-shadow: 0 20px 60px rgba(229,9,20,0.12); }
+.build-debris { grid-template-columns: 1fr 1.05fr; }
+.build-debris .build-media { order: 2; }
+.build-media { position: relative; display: block; overflow: hidden; min-height: 320px; background: #0b0b0b; }
+.build-media img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; transition: transform 0.6s ease;
+}
+.build-isla .build-media { background: #EEF0FA; }
+.build-isla .build-media img, .build-debris .build-media img { object-fit: contain; padding: 3rem 1.2rem 1rem; }
+.build-debris .build-media { background: #2142C8; }
+.build:hover .build-media img { transform: scale(1.04); }
+.build-badge {
+  position: absolute; left: 1rem; top: 1rem;
+  background: rgba(0,0,0,0.75); color: var(--white);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0.45rem 0.8rem; border-radius: 2px; border-left: 3px solid var(--red);
+}
+.build-body { padding: 2.2rem 2.4rem; }
+.build-meta {
+  display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;
+  font-size: 0.7rem; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.preview-new { color: #ffcc00; font-weight: 600; letter-spacing: 0.1em; }
+.build h3 {
+  font-family: var(--font-display); font-size: 3rem; font-weight: 400;
+  letter-spacing: 0.04em; line-height: 1; margin-bottom: 0.8rem;
+}
+.build-pitch { font-size: 1rem; color: var(--light); line-height: 1.6; margin-bottom: 1.5rem; }
+.build-pitch strong { color: var(--white); }
+.build-cols { display: grid; grid-template-columns: 1fr 1.3fr; gap: 1.6rem; margin-bottom: 1.4rem; }
+.build-cols h4 {
+  font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--red); margin-bottom: 0.6rem; font-weight: 600;
+}
+.build-cols p, .build-cols li { font-size: 0.82rem; color: var(--gray); line-height: 1.65; font-weight: 300; }
+.build-cols strong { color: var(--light); font-weight: 500; }
+.build-cols ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.build-cols li { position: relative; padding-left: 1rem; }
+.build-cols li::before { content: '▸'; position: absolute; left: 0; color: var(--red); }
+.build-proof { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; margin-bottom: 1rem; }
+.build-proof span { font-size: 0.75rem; color: #46d369; }
+.build-btns { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.2rem; }
+.build-btns a { min-height: 44px; display: inline-flex; align-items: center; }
+
 /* PROJECTS */
 .projects-row {
   display: grid; grid-template-columns: repeat(3, 1fr);
@@ -366,7 +420,7 @@ body {
 
 /* STATS */
 .stats-strip {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   background: var(--red);
   padding: 3rem;
 }
@@ -448,6 +502,14 @@ body {
   .about-grid { grid-template-columns: 1fr; }
   .skills-categories { grid-template-columns: 1fr; }
   .projects-row { grid-template-columns: 1fr; }
+  .build, .build-debris { grid-template-columns: 1fr; }
+  .build-debris .build-media { order: 0; }
+  .build-media { min-height: 0; aspect-ratio: 16/10; }
+  .build-isla .build-media img, .build-debris .build-media img { padding: 2.6rem 0.6rem 0.6rem; }
+  .build-body { padding: 1.6rem 1.3rem; }
+  .build h3 { font-size: 2.4rem; }
+  .build-cols { grid-template-columns: 1fr; gap: 1.2rem; }
   .stats-strip { grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem; }
+  .stats-strip .stat:last-child { grid-column: 1 / -1; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
 }

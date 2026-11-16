@@ -4,6 +4,16 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tatiana Martínez — Portfolio</title>
+  <meta name="description" content="Karen Tatiana Martínez: bilingual (EN/ES) front-end developer and technical support specialist. Hackathon builds with AI, Solana payments and games for kids."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Karen Tatiana Martínez — Front-End Developer & Hackathon Builder"/>
+  <meta property="og:description" content="Isla Skills, an app store where robots pay for skills per use (IslandHack v5), and debris, a NASA Space Apps game that turns litter pick-ups into space stories."/>
+  <meta property="og:url" content="https://katamar-lang.github.io/PORTAFOLIO/"/>
+  <meta property="og:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Karen Tatiana Martínez — Front-End Developer & Hackathon Builder"/>
+  <meta name="twitter:description" content="Isla Skills (IslandHack v5) and debris (NASA Space Apps): AI, Solana payments and games for kids."/>
+  <meta name="twitter:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Netflix+Sans:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
@@ -32,6 +42,7 @@
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#builds">Hackathons</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
@@ -56,13 +67,16 @@
         <span class="tag">Bilingual EN/ES</span>
         <span class="dot">·</span>
         <span class="tag">Front-End Dev</span>
+        <span class="dot">·</span>
+        <span class="tag">Hackathon Builder</span>
       </p>
       <p class="hero-desc">
         Bilingual remote professional combining top-tier client communication 
-        with hands-on front-end development. Based in Colombia, working worldwide.
+        with hands-on front-end development. In 2026 I shipped two hackathon products:
+        an app store where robots pay for skills, and a NASA Space Apps game for kids.
       </p>
       <div class="hero-btns">
-        <a href="#projects" class="btn-play">▶ View My Work</a>
+        <a href="#builds" class="btn-play">▶ View My Work</a>
         <a href="#about" class="btn-info">ℹ More Info</a>
       </div>
     </div>
@@ -165,9 +179,94 @@
     </div>
   </section>
 
+  <!-- HACKATHON BUILDS -->
+  <section class="row-section" id="builds">
+    <h2 class="row-title">Hackathon Builds · 2026</h2>
+    <p class="row-sub">Real products, built fast, shipped live. What I made and why.</p>
+
+    <article class="build build-isla">
+      <a class="build-media" href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">
+        <img src="img/isla-skills.jpg" alt="Isla Skills cover: The skill store for robots. Litter Spotter 0.01 USDC, Human Reviewer 0.005 USDC, Cleanup Planner 0.002 USDC" loading="lazy"/>
+        <span class="build-badge">IslandHack v5 · IslandDAO</span>
+      </a>
+      <div class="build-body">
+        <div class="build-meta"><span class="preview-live">● LIVE DEMO</span><span>Solo build · Florianópolis, Brazil · Nov 2026</span></div>
+        <h3>Isla Skills</h3>
+        <p class="build-pitch">An app store for robot skills. Each skill is a service a robot calls and pays <strong>per use</strong>, in USDC on Solana, with no human approving anything.</p>
+
+        <div class="build-cols">
+          <div>
+            <h4>Why I built it</h4>
+            <p>Robots are learning new skills through software, but there's no way to pay for a skill each time a robot uses it. I wanted to show that machines can buy services from AI models <em>and</em> from people, automatically and fairly: 100% of each price goes to the skill's maker.</p>
+          </div>
+          <div>
+            <h4>What I built</h4>
+            <ul>
+              <li><strong>Clean Sweep demo:</strong> Coco, a simulated cleaning robot, takes one photo of a room and pays a chain of three skills.</li>
+              <li><strong>Litter Spotter</strong> (AI vision with Claude) finds the litter; when the AI is unsure, a <strong>real person</strong> reviews the photo from their phone and gets paid.</li>
+              <li><strong>Cleanup Planner</strong> turns the findings into a plan, and a <strong>3D model of the villa</strong> shows Coco driving to the room.</li>
+              <li>Robot wallet with a daily budget and spending rules, works with Solflare, Phantom and Backpack.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="build-proof">
+          <span>✓ Real payments settled end to end on Solana devnet</span>
+          <span>✓ Mobile-first, tested on iPhone and Android sizes</span>
+        </div>
+        <div class="preview-tags">
+          <span>JavaScript</span><span>Node.js</span><span>Serverless</span><span>Claude API (vision)</span><span>Solana</span><span>x402</span><span>three.js</span><span>Playwright</span>
+        </div>
+        <div class="build-btns">
+          <a class="btn-play" href="https://isla-skills-dao-2b40fb.netlify.app/?v=2" target="_blank" rel="noopener">▶ Try the live demo</a>
+          <a class="btn-info" href="https://github.com/katamar-lang/isla-skills" target="_blank" rel="noopener">⟨/⟩ View code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="build build-debris">
+      <a class="build-media" href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">
+        <img src="img/debris.jpg" alt="debris app screens: choose your storyteller, the debris welcome screen with Eagle the lander, and the first story chapter, 96 bags on the Moon" loading="lazy"/>
+        <span class="build-badge">NASA Space Apps Challenge</span>
+      </a>
+      <div class="build-body">
+        <div class="build-meta"><span class="preview-new">★ NEW</span><span>Team project · Nov 2026</span></div>
+        <h3>debris</h3>
+        <p class="build-pitch"><em>Every piece left behind has a story.</em> A web game for kids aged 7 to 12: they pick up litter on Earth, scan it with a phone, and each piece unlocks the story of a machine humanity left on the Moon, on Mars or in space.</p>
+
+        <div class="build-cols">
+          <div>
+            <h4>Why we built it</h4>
+            <p>To connect two kinds of litter: the trash on our streets and beaches, and the 13 machines we left in space. Kids learn to clean up safely and discover real NASA history, so every pick-up feels like a mission.</p>
+          </div>
+          <div>
+            <h4>What I built</h4>
+            <ul>
+              <li>The playable web app from the team's designs and storyboard: scan → story → bin it → <strong>earn a patch</strong> for a 3D explorer jacket.</li>
+              <li><strong>AI scanner</strong> (adapted from Isla Skills' Litter Spotter) says which bin each piece goes in, and warns "Stop! Don't touch it" for dangerous items.</li>
+              <li>Two storytellers, including the Bull from Florianópolis' <em>boi de mamão</em> tradition, a read-aloud button, and an <strong>Impact</strong> screen: "Litter to the Moon".</li>
+              <li>Built for kids' privacy: no accounts, photos are never stored.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="build-proof">
+          <span>✓ English · Español · Português</span>
+          <span>✓ Lighthouse: Accessibility 100 · Performance 98</span>
+        </div>
+        <div class="preview-tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Node.js</span><span>Claude API (vision)</span><span>Web Speech</span><span>Web Audio</span><span>3D</span>
+        </div>
+        <div class="build-btns">
+          <a class="btn-info" href="https://github.com/gringokiwi/spaceapps" target="_blank" rel="noopener">⟨/⟩ View code</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
   <!-- PROJECTS ROW — Netflix Cards -->
   <section class="row-section" id="projects">
-    <h2 class="row-title">Projects</h2>
+    <h2 class="row-title">More Projects</h2>
     <p class="row-sub">Hover to preview · Click to visit</p>
     <div class="projects-row" id="projectsRow">
 
@@ -228,23 +327,6 @@
         </div>
       </div>
 
-      <div class="project-card coming-soon">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #111, #222)">
-          <div class="project-thumb-text">COMING</div>
-          <div class="project-thumb-sub">Soon</div>
-        </div>
-        <div class="project-preview">
-          <div class="preview-top">
-            <span class="preview-wip">⧖ IN PROGRESS</span>
-          </div>
-          <h4>Project #3</h4>
-          <p>Next project coming soon. Always building, always learning.</p>
-          <div class="preview-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -259,8 +341,12 @@
       <span class="stat-label">Clients Supported</span>
     </div>
     <div class="stat">
-      <span class="stat-num" data-target="3">0</span>
-      <span class="stat-label">Live Projects</span>
+      <span class="stat-num" data-target="5">0</span>
+      <span class="stat-label">Projects Built</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="2">0</span>
+      <span class="stat-label">Hackathons in 2026</span>
     </div>
     <div class="stat">
       <span class="stat-num" data-target="2">0</span>
@@ -289,8 +375,8 @@
           </div>
         </div>
         <div class="contact-links">
-          <a href="https://katamar-lang.github.io/KATAMAR-FASHION/" target="_blank" class="cl-btn">GitHub ↗</a>
-          <a href="#" class="cl-btn">LinkedIn ↗</a>
+          <a href="https://github.com/katamar-lang" target="_blank" rel="noopener" class="cl-btn">GitHub ↗</a>
+          <a href="mailto:Katamar2000@gmail.com" class="cl-btn">Email ↗</a>
         </div>
       </div>
       <div class="contact-form">
@@ -306,7 +392,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-logo">TATIANA<span>.</span></div>
-    <p>© 2025 Karen Tatiana Martínez · Made with HTML, CSS & JavaScript · Colombia 🇨🇴</p>
+    <p>© 2026 Karen Tatiana Martínez · Made with HTML, CSS & JavaScript · Colombia 🇨🇴</p>
   </footer>
 
   <script src="js/app.js"></script>
