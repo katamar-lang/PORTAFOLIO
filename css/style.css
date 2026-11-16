@@ -1,3 +1,13 @@
+/* Junicode by Peter S. Baker, SIL Open Font License (fonts/OFL.txt) */
+@font-face {
+  font-family: 'Junicode'; src: url('../fonts/Junicode-Roman.woff2') format('woff2');
+  font-weight: 300 700; font-stretch: 75% 125%; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Junicode'; src: url('../fonts/Junicode-Italic.woff2') format('woff2');
+  font-weight: 300 700; font-stretch: 75% 125%; font-style: italic; font-display: swap;
+}
+
 :root {
   --red: #E50914;
   --red-dark: #b20710;
@@ -9,7 +19,7 @@
   --white: #ffffff;
   --gray: #a3a3a3;
   --light: #e5e5e5;
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Junicode', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
 }
 
@@ -497,7 +507,7 @@ body {
 @media (max-width: 960px) {
   .nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
-  .hero { padding: 0 1.5rem; }
+  .hero { padding: 6rem 1.5rem 4rem; }
   .row-section { padding: 4rem 1.5rem; }
   .about-grid { grid-template-columns: 1fr; }
   .skills-categories { grid-template-columns: 1fr; }

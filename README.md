@@ -27,7 +27,7 @@ A Netflix-inspired personal portfolio website built with vanilla HTML, CSS, and 
 - HTML5 (semantic markup)
 - CSS3 (custom properties, grid, flexbox, animations)
 - Vanilla JavaScript (DOM manipulation, Intersection Observer pattern, scroll events)
-- Google Fonts (Bebas Neue + DM Sans)
+- [Junicode](https://open-foundry.com/fonts/junicode) for titles (by Peter S. Baker, SIL Open Font License, see `fonts/OFL.txt`) + DM Sans (Google Fonts)
 
 ## 📁 Structure
 
