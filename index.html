@@ -16,10 +16,8 @@
   <meta name="twitter:description" content="Isla Skills (IslandHack v5) and debris (NASA Space Apps): AI, Solana payments and games for kids."/>
   <meta name="twitter:image" content="https://katamar-lang.github.io/PORTAFOLIO/img/og.jpg"/>
   <link rel="preload" href="fonts/Junicode-Roman.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css?v=library2"/>
+  <link rel="preload" href="img/library.jpg" as="image"/>
+  <link rel="stylesheet" href="css/style.css?v=library4"/>
 </head>
 <body>
 
@@ -28,75 +26,52 @@
     <span class="status"><i aria-hidden="true"></i>Available for remote work</span>
   </header>
 
-  <!-- THE LIBRARY: an open book on top of a stack of books -->
   <main class="library" id="library">
-    <h1 class="sr-only">Karen Tatiana Martínez, portfolio</h1>
+
+    <section class="intro intro-left">
+      <p class="eyebrow">Portfolio · 2026</p>
+      <h1 class="name">Karen Tatiana Martínez</h1>
+      <p class="role">Front-end developer · Technical support · Hackathon builder</p>
+      <p class="summary">I build clean, accessible web products and help people use them. Based in Colombia, working remotely with teams worldwide.</p>
+      <p class="hint">Choose a book to open it</p>
+    </section>
 
     <div class="stack">
-
-      <article class="open-book" aria-label="Introduction">
-        <div class="cover-under" aria-hidden="true"></div>
-        <div class="pages">
-          <section class="page page-left">
-            <p class="eyebrow">Portfolio · 2026</p>
-            <h2 class="name">Karen Tatiana Martínez</h2>
-            <p class="role">Front-end developer · Technical support · Hackathon builder</p>
-            <p class="summary">I build clean, accessible web products and help people use them. Based in Colombia, working remotely with teams worldwide.</p>
-          </section>
-          <section class="page page-right">
-            <p class="eyebrow">Selected work</p>
-            <ul class="toc">
-              <li><button type="button" data-open="hackathons"><span>Isla Skills</span><em>robots pay for skills</em></button></li>
-              <li><button type="button" data-open="hackathons"><span>debris</span><em>NASA Space Apps game</em></button></li>
-              <li><button type="button" data-open="projects"><span>KATAMAR Fashion</span><em>e-commerce</em></button></li>
-              <li><button type="button" data-open="projects"><span>Mabelle Dog Spa</span><em>landing page</em></button></li>
-            </ul>
-            <p class="eyebrow">Languages</p>
-            <ul class="langs">
-              <li><span>Spanish</span><em>Native</em></li>
-              <li><span>English</span><em>Advanced</em></li>
-              <li><span>Portuguese</span><em>Intermediate</em></li>
-            </ul>
-          </section>
-        </div>
-      </article>
-
-      <button type="button" class="spine sp-1" data-open="about" aria-label="Open the book: About me">
-        <span class="label">About me</span>
-      </button>
-      <button type="button" class="spine sp-2" data-open="hackathons" aria-label="Open the book: Hackathons">
-        <span class="label">Hackathons</span>
-      </button>
-      <button type="button" class="spine sp-3" data-open="projects" aria-label="Open the book: Projects">
-        <span class="label">Projects</span>
-      </button>
-      <button type="button" class="spine sp-4" data-open="skills" aria-label="Open the book: Skills and tools">
-        <span class="label">Skills &amp; tools</span>
-      </button>
-      <button type="button" class="spine sp-5" data-open="contact" aria-label="Open the book: Contact">
-        <span class="label">Contact</span>
-      </button>
+      <img class="photo" src="img/library.jpg" width="554" height="985" alt="A stack of old leather-bound books with an open book on top, in front of a library shelf"/>
+      <button type="button" class="spot spot-open" data-open="about" style="left:9%;top:21%;width:82%;height:17.5%" aria-label="Open the book: About me"></button>
+        <button type="button" class="spot" data-open="about" style="left:17.51%;top:38.78%;width:54.33%;height:5.69%;--t:-0.6deg" aria-label="Open the book: About me"><span class="tag">About me</span></button>
+        <button type="button" class="spot" data-open="hackathons" style="left:15.16%;top:44.37%;width:58.84%;height:5.89%;--t:0.4deg" aria-label="Open the book: Hackathons"><span class="tag">Hackathons</span></button>
+        <button type="button" class="spot" data-open="projects" style="left:6.68%;top:49.75%;width:65.88%;height:9.75%;--t:-0.3deg" aria-label="Open the book: Projects"><span class="tag">Projects</span></button>
+        <button type="button" class="spot" data-open="skills" style="left:12.09%;top:58.78%;width:79.06%;height:6.19%;--t:0.7deg" aria-label="Open the book: Skills and tools"><span class="tag">Skills &amp; tools</span></button>
+        <button type="button" class="spot" data-open="languages" style="left:6.68%;top:65.08%;width:82.67%;height:11.17%;--t:-0.5deg" aria-label="Open the book: Languages"><span class="tag">Languages</span></button>
+        <button type="button" class="spot" data-open="contact" style="left:6.32%;top:76.24%;width:80.69%;height:8.32%;--t:0.3deg" aria-label="Open the book: Contact"><span class="tag">Contact</span></button>
     </div>
 
-    <p class="hint">Choose a book to open it</p>
+    <section class="intro intro-right">
+      <p class="eyebrow">Selected work</p>
+      <ul class="toc">
+        <li><button type="button" data-open="hackathons"><span>Isla Skills</span><em>Robots pay for skills · IslandHack v5</em></button></li>
+        <li><button type="button" data-open="hackathons"><span>debris</span><em>Game for kids · NASA Space Apps</em></button></li>
+        <li><button type="button" data-open="projects"><span>KATAMAR Fashion</span><em>E-commerce</em></button></li>
+        <li><button type="button" data-open="projects"><span>Mabelle Luxury Dog Spa</span><em>Landing page</em></button></li>
+      </ul>
+      <p class="eyebrow">Languages</p>
+      <ul class="langs">
+        <li><span>Spanish</span><em>Native</em></li>
+        <li><span>English</span><em>Advanced</em></li>
+        <li><span>Portuguese</span><em>Intermediate</em></li>
+      </ul>
+    </section>
   </main>
 
   <footer class="foot">© 2026 Karen Tatiana Martínez · Colombia</footer>
 
-  <!-- THE READER: the open book that shows each section -->
   <div class="reader" id="reader" hidden>
     <div class="reader-backdrop" data-close></div>
     <div class="reader-book" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
 
       <nav class="rail" aria-label="Books">
-        <span class="rail-mono">KTM</span>
-        <div class="rail-dots">
-          <button type="button" data-open="about" aria-label="About me"></button>
-          <button type="button" data-open="hackathons" aria-label="Hackathons"></button>
-          <button type="button" data-open="projects" aria-label="Projects"></button>
-          <button type="button" data-open="skills" aria-label="Skills and tools"></button>
-          <button type="button" data-open="contact" aria-label="Contact"></button>
-        </div>
+        <span class="rail-mono">K · T · M</span>
       </nav>
 
       <div class="paper">
@@ -245,8 +220,19 @@
             </div>
           </section>
 
-          <!-- BOOK V · CONTACT -->
-          <section class="chapter" data-book="contact" data-num="Book V" hidden>
+          <!-- BOOK V · LANGUAGES -->
+          <section class="chapter" data-book="languages" data-num="Book V" hidden>
+            <h2>Languages</h2>
+            <p class="lead">I work comfortably with clients and teams in three languages.</p>
+            <dl class="facts">
+              <div><dt>Spanish</dt><dd>Native</dd></div>
+              <div><dt>English</dt><dd>Advanced (C1) · daily work with international clients</dd></div>
+              <div><dt>Portuguese</dt><dd>Intermediate · lived and built in Florianópolis, Brazil</dd></div>
+            </dl>
+          </section>
+
+          <!-- BOOK VI · CONTACT -->
+          <section class="chapter" data-book="contact" data-num="Book VI" hidden>
             <h2>Contact</h2>
             <p class="lead">I'm looking for full-time remote roles in technical support, customer success or front-end development. Let's talk.</p>
             <dl class="facts">
@@ -262,15 +248,16 @@
       </div>
 
       <div class="shelf" aria-label="Other books">
-        <button type="button" class="vspine sp-1" data-open="about"><span>About me</span></button>
-        <button type="button" class="vspine sp-2" data-open="hackathons"><span>Hackathons</span></button>
-        <button type="button" class="vspine sp-3" data-open="projects"><span>Projects</span></button>
-        <button type="button" class="vspine sp-4" data-open="skills"><span>Skills</span></button>
-        <button type="button" class="vspine sp-5" data-open="contact"><span>Contact</span></button>
+        <button type="button" class="vspine" data-open="about" style="--h:url('../img/spine-1.jpg');--w:63.1%;--ar:301/56;--x:6%"><span class="tag">About me</span></button>
+        <button type="button" class="vspine" data-open="hackathons" style="--h:url('../img/spine-2.jpg');--w:68.3%;--ar:326/58;--x:3%"><span class="tag">Hackathons</span></button>
+        <button type="button" class="vspine" data-open="projects" style="--h:url('../img/spine-3.jpg');--w:76.5%;--ar:365/96;--x:0"><span class="tag">Projects</span></button>
+        <button type="button" class="vspine" data-open="skills" style="--h:url('../img/spine-4.jpg');--w:91.8%;--ar:438/61;--x:2%"><span class="tag">Skills</span></button>
+        <button type="button" class="vspine" data-open="languages" style="--h:url('../img/spine-5.jpg');--w:96.0%;--ar:458/110;--x:0"><span class="tag">Languages</span></button>
+        <button type="button" class="vspine" data-open="contact" style="--h:url('../img/spine-6.jpg');--w:93.7%;--ar:447/82;--x:1%"><span class="tag">Contact</span></button>
       </div>
     </div>
   </div>
 
-  <script src="js/app.js?v=library2"></script>
+  <script src="js/app.js?v=library4"></script>
 </body>
 </html>

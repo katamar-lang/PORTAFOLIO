@@ -4,7 +4,7 @@
   const scroller = document.getElementById('paperScroll');
   const running = document.getElementById('readerRunning');
   const library = document.getElementById('library');
-  const BOOKS = ['about', 'hackathons', 'projects', 'skills', 'contact'];
+  const BOOKS = ['about', 'hackathons', 'projects', 'skills', 'languages', 'contact'];
   let opener = null;
 
   function show(book) {
@@ -13,7 +13,7 @@
     running.textContent = ch.dataset.num;
     ch.querySelector('h2').id = 'readerTitle';
     document.querySelectorAll('.chapter h2').forEach(h => { if (h !== ch.querySelector('h2')) h.removeAttribute('id'); });
-    document.querySelectorAll('.rail-dots button, .vspine').forEach(b => {
+    document.querySelectorAll('.vspine').forEach(b => {
       b.setAttribute('aria-current', b.dataset.open === book ? 'true' : 'false');
     });
     scroller.scrollTop = 0;
