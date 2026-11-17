@@ -2,7 +2,7 @@
 // Each entry is  "English text": ["Español", "Português"].  Names of products and tools are not translated.
 (function () {
   const D = {
-    "Karen Tatiana Martínez · Portfolio": ["Karen Tatiana Martínez · Portafolio", "Karen Tatiana Martínez · Portfólio"],
+    "Karen Tatiana Martinez · Portfolio": ["Karen Tatiana Martinez · Portafolio", "Karen Tatiana Martinez · Portfólio"],
     "Web developer · Customer support · Remote": ["Desarrolladora web · Atención al cliente · Remoto", "Desenvolvedora web · Atendimento ao cliente · Remoto"],
     "Start here": ["Empieza aquí", "Comece aqui"],
     "About me": ["Sobre mí", "Sobre mim"],
@@ -221,7 +221,7 @@
     "A stack of old leather-bound books with an open book on top, in front of a library shelf": [
       "Una pila de libros antiguos de cuero con un libro abierto encima, frente a un estante de biblioteca",
       "Uma pilha de livros antigos de couro com um livro aberto em cima, em frente a uma estante de biblioteca"],
-    "Open the first book: Karen Tatiana Martínez": ["Abrir el primer libro: Karen Tatiana Martínez", "Abrir o primeiro livro: Karen Tatiana Martínez"],
+    "Open the first book: Karen Tatiana Martinez": ["Abrir el primer libro: Karen Tatiana Martinez", "Abrir o primeiro livro: Karen Tatiana Martinez"],
     "Open the book: About me": ["Abrir el libro: Sobre mí", "Abrir o livro: Sobre mim"],
     "Open the book: Experience": ["Abrir el libro: Experiencia", "Abrir o livro: Experiência"],
     "Open the book: Hackathons": ["Abrir el libro: Hackathons", "Abrir o livro: Hackathons"],
@@ -232,7 +232,7 @@
     "Books": ["Libros", "Livros"],
     "Other books": ["Otros libros", "Outros livros"],
     "Close the book": ["Cerrar el libro", "Fechar o livro"],
-    "Portrait of Karen Tatiana Martínez": ["Retrato de Karen Tatiana Martínez", "Retrato de Karen Tatiana Martínez"],
+    "Portrait of Karen Tatiana Martinez": ["Retrato de Karen Tatiana Martinez", "Retrato de Karen Tatiana Martinez"],
     "Isla Skills: the skill store for robots, with three skills and their prices in USDC": [
       "Isla Skills: la tienda de habilidades para robots, con tres habilidades y sus precios en USDC",
       "Isla Skills: a loja de habilidades para robôs, com três habilidades e seus preços em USDC"],

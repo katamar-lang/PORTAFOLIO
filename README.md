@@ -1,4 +1,4 @@
-# Karen Tatiana Martínez — Personal Portfolio
+# Karen Tatiana Martinez — Personal Portfolio
 
 A personal portfolio designed as a **library**: an open book on top of a stack of books. The open book shows who I am, my selected work and my languages. Each book in the stack has a small label (About me, Hackathons, Projects, Skills & tools, Contact); tap one and it opens as a book with that section. Built by hand with vanilla HTML, CSS and JavaScript.
 
@@ -58,5 +58,5 @@ open index.html
 
 ---
 
-Built by **Karen Tatiana Martínez** — Technical Support Specialist & Front-End Developer  
+Built by **Karen Tatiana Martinez** — Technical Support Specialist & Front-End Developer  
 🇨🇴 Colombia | Available for remote opportunities | Fluent English (C1)
